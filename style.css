@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img {
+  max-width: 100%;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-header {
+  padding-block: 20px;
+}
+
+.barra {
+  background-color: #db008d;
+}
+.navegacion-principal {
+  padding-block: 6px;
+}
+.navegacion-principal a {
+  display: block;
+  text-align: center;
+  padding: 6px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 22px;
+}
+.navegacion-principal a:hover {
+  background-color: #00b8e4;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .navegacion-principal {
+    padding-block: 20px;
+  }
+  .navegacion-principal a {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
