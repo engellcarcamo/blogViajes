@@ -9,10 +9,35 @@ body {
 img {
   max-width: 100%;
 }
+p {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.boton {
+  background-color: #00b8e4;
+  padding: 10px 60px;
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+}
+.boton:hover {
+  background-color: #003542;
+}
 
 .contenedor {
   max-width: 1200px;
   margin: 0 auto;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
 .site-header {
@@ -46,4 +71,76 @@ img {
     display: inline-block;
     margin-right: 20px;
   }
+}
+
+/* Contenedores principales Main aside*/
+
+.contenido-principal,
+.sidebar {
+  padding-inline: 16px;
+  margin-top: 30px;
+}
+
+.sidebar {
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .contenido-principal {
+    width: 64%;
+    float: left;
+    padding: 0;
+  }
+
+  .sidebar {
+    width: 30%;
+    float: right;
+    padding: 0;
+  }
+}
+
+/* Entradas de blog*/
+h2 {
+  color: #00b8e4;
+  margin-bottom: 20px;
+}
+
+.entrada {
+  margin-bottom: 60px;
+}
+
+.entrada img {
+  display: block;
+}
+.entrada p {
+  text-align: justify;
+}
+
+@media (min-width: 480px) {
+  .entrada img {
+    width: 300px;
+    float: left;
+    margin: 0 30px 0 0;
+  }
+}
+
+/*sidebar*/
+.sidebar ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+.sidebar ul li {
+  padding: 10px;
+}
+.sidebar ul li:hover {
+  background-color: #00b8e4;
+  color: #ffffff;
+}
+.sidebar ul li a {
+  color: #00b8e4;
+  text-decoration: none;
+  font-size: 18px;
+}
+.sidebar ul li:hover a {
+  color: #ffffff;
 }
