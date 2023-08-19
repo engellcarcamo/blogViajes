@@ -45,6 +45,37 @@ p {
   display: block;
 }
 
+/* menu de navegacion responsiva*/
+.barra {
+  overflow: hidden;
+}
+.mobile-menu {
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+  padding-block: 6px;
+}
+#nav:target {
+  max-height: 800px;
+}
+
+.navegacion-principal {
+  max-height: 0;
+  transition: 0.6s;
+}
+
+@media (min-width: 768px) {
+  .navegacion-principal {
+    max-height: unset;
+    transition: none;
+  }
+  .mobile-menu,
+  .cerrar {
+    display: none !important;
+  }
+}
+
 .site-header {
   padding-block: 20px;
 }
@@ -52,9 +83,7 @@ p {
 .barra {
   background-color: #db008d;
 }
-.navegacion-principal {
-  padding-block: 6px;
-}
+
 .navegacion-principal a {
   display: block;
   text-align: center;
