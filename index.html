@@ -6,6 +6,7 @@
     <meta name="author" content="Engels Carcamo">
     <meta name="description" content="Diseño de una página simulando un blog de viaje construido con HTML y CSS3">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3c01b3a3fb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Blog de Viajes</title>
 </head>
@@ -15,12 +16,18 @@
         <img src="/img/logo.png" alt="Logotipo">
     </header>
     <div class="barra">
-        <nav class="navegacion-principal contenedor">
+        <a href="#nav" class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav id="nav" class="navegacion-principal contenedor">
             <a href="#">Inicio</a>
             <a href="#">Nosotros</a>
             <a href="#">Blog</a>
             <a href="#">Tienda</a>
             <a href="#">Contacto</a>
+            <a href="#" class="cerrar">
+                <i class="fas fa-long-arrow-alt-left"></i>
+            </a>
         </nav>
     </div>
 
